@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Formulir Pendaftaran - IHM</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="assets/modules/bootstrap-daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="assets/modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+    <link rel="stylesheet" href="assets/modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="assets/modules/jquery-selectric/selectric.css">
+    <link rel="stylesheet" href="assets/modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+    <link rel="stylesheet" href="assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/formulir-pendaftaran.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <!-- Start GA -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-94034622-3');
+    </script>
+    <!-- /END GA -->
+
+</head>
+
+<body>
+    <div class="col-12 col-md-6 col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <h4>Input Text</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>Default Input Text</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Phone Number (US Format)</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control phone-number">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Password Strength</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
+                        <input type="password" class="form-control pwstrength" data-indicator="pwindicator">
+                    </div>
+                    <div id="pwindicator" class="pwindicator">
+                        <div class="bar"></div>
+                        <div class="label"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Currency</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                $
+                            </div>
+                        </div>
+                        <input type="text" class="form-control currency">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Purchase Code</label>
+                    <input type="text" class="form-control purchase-code" placeholder="ASDF-GHIJ-KLMN-OPQR">
+                </div>
+                <div class="form-group">
+                    <label>Invoice</label>
+                    <input type="text" class="form-control invoice-input">
+                </div>
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="text" class="form-control datemask" placeholder="YYYY/MM/DD">
+                </div>
+                <div class="form-group">
+                    <label>Credit Card</label>
+                    <input type="text" class="form-control creditcard">
+                </div>
+                <div class="form-group">
+                    <label>Tags</label>
+                    <input type="text" class="form-control inputtags">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h4>Toggle Switches</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <div class="control-label">Toggle switches</div>
+                    <div class="custom-switches-stacked mt-2">
+                        <label class="custom-switch">
+                <input type="radio" name="option" value="1" class="custom-switch-input" checked>
+                <span class="custom-switch-indicator"></span>
+                <span class="custom-switch-description">Option 1</span>
+              </label>
+                        <label class="custom-switch">
+                <input type="radio" name="option" value="2" class="custom-switch-input">
+                <span class="custom-switch-indicator"></span>
+                <span class="custom-switch-description">Option 2</span>
+              </label>
+                        <label class="custom-switch">
+                <input type="radio" name="option" value="3" class="custom-switch-input">
+                <span class="custom-switch-indicator"></span>
+                <span class="custom-switch-description">Option 3</span>
+              </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="control-label">Toggle switch single</div>
+                    <label class="custom-switch mt-2">
+              <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
+              <span class="custom-switch-indicator"></span>
+              <span class="custom-switch-description">I agree with terms and conditions</span>
+            </label>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h4>Image Check</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label class="form-label">Image Check</label>
+                    <div class="row gutters-sm">
+                        <div class="col-6 col-sm-4">
+                            <label class="imagecheck mb-4">
+                  <input name="imagecheck" type="checkbox" value="1" class="imagecheck-input"  />
+                  <figure class="imagecheck-figure">
+                    <img src="assets/img/news/img01.jpg" alt="}" class="imagecheck-image">
+                  </figure>
+                </label>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <label class="imagecheck mb-4">
+                  <input name="imagecheck" type="checkbox" value="2" class="imagecheck-input"  checked />
+                  <figure class="imagecheck-figure">
+                    <img src="assets/img/news/img02.jpg" alt="}" class="imagecheck-image">
+                  </figure>
+                </label>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <label class="imagecheck mb-4">
+                  <input name="imagecheck" type="checkbox" value="3" class="imagecheck-input"  />
+                  <figure class="imagecheck-figure">
+                    <img src="assets/img/news/img03.jpg" alt="}" class="imagecheck-image">
+                  </figure>
+                </label>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <label class="imagecheck mb-4">
+                  <input name="imagecheck" type="checkbox" value="4" class="imagecheck-input"  checked />
+                  <figure class="imagecheck-figure">
+                    <img src="assets/img/news/img04.jpg" alt="}" class="imagecheck-image">
+                  </figure>
+                </label>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <label class="imagecheck mb-4">
+                  <input name="imagecheck" type="checkbox" value="5" class="imagecheck-input"  />
+                  <figure class="imagecheck-figure">
+                    <img src="assets/img/news/img05.jpg" alt="}" class="imagecheck-image">
+                  </figure>
+                </label>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <label class="imagecheck mb-4">
+                  <input name="imagecheck" type="checkbox" value="6" class="imagecheck-input"  />
+                  <figure class="imagecheck-figure">
+                    <img src="assets/img/news/img06.jpg" alt="}" class="imagecheck-image">
+                  </figure>
+                </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h4>Color</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>Simple</label>
+                    <input type="text" class="form-control colorpickerinput">
+                </div>
+                <div class="form-group">
+                    <label>Pick Your Color</label>
+                    <div class="input-group colorpickerinput">
+                        <input type="text" class="form-control">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <i class="fas fa-fill-drip"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Color Input</label>
+                    <div class="row gutters-xs">
+                        <div class="col-auto">
+                            <label class="colorinput">
+                  <input name="color" type="checkbox" value="primary" class="colorinput-input" />
+                  <span class="colorinput-color bg-primary"></span>
+                </label>
+                        </div>
+                        <div class="col-auto">
+                            <label class="colorinput">
+                  <input name="color" type="checkbox" value="secondary" class="colorinput-input" />
+                  <span class="colorinput-color bg-secondary"></span>
+                </label>
+                        </div>
+                        <div class="col-auto">
+                            <label class="colorinput">
+                  <input name="color" type="checkbox" value="danger" class="colorinput-input" />
+                  <span class="colorinput-color bg-danger"></span>
+                </label>
+                        </div>
+                        <div class="col-auto">
+                            <label class="colorinput">
+                  <input name="color" type="checkbox" value="warning" class="colorinput-input" />
+                  <span class="colorinput-color bg-warning"></span>
+                </label>
+                        </div>
+                        <div class="col-auto">
+                            <label class="colorinput">
+                  <input name="color" type="checkbox" value="info" class="colorinput-input" />
+                  <span class="colorinput-color bg-info"></span>
+                </label>
+                        </div>
+                        <div class="col-auto">
+                            <label class="colorinput">
+                  <input name="color" type="checkbox" value="success" class="colorinput-input" />
+                  <span class="colorinput-color bg-success"></span>
+                </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> -->
+
+    <!-- Heading Form Start -->
+    <section class="form-heading section-margin" id="form-heading">
+        <div class="container container-heading">
+            <div class="content-left">
+                <img class="logo-ihm" src="assets/img/logo/logo-ihm.png" alt="">
+            </div>
+            <div class="content-right">
+                <h2 class="form-title">
+                    FORMULIR PENDAFTARAN
+                </h2>
+                <p class="title-desc">
+                    INDIANA HOSPITALITY MANAGEMENT
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Heading Form End -->
+
+    <!-- Form Body Start -->
+    <section class="form-body">
+        <div class="container container-form">
+            <div class="sub-title">
+                <h5>
+                    IDENTITAS CALON MAHASISWA BARU
+                </h5>
+                <hr size="1px" width="25%" color="#F1C01D" align="left">
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="complete-name">
+                                    Nama Lengkap
+                                </label>
+                            <input type="text" id="complete-name" placeholder="Masukkan nama lengkap Anda..." class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender">
+                                Jenis Kelamin
+                            </label>
+                            <div class="radio-button">
+
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline1">Laki-laki</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline2">Perempuan</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="place-birth">
+                                    Tempat Lahir
+                                </label>
+                            <input type="text" id="place-birth" placeholder="Masukkan tempat lahir Anda..." class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date-birth">
+                                    Tanggal Lahir
+                                </label>
+                            <input type="date" id="date-birth" placeholder="Masukkan tanggal lahir Anda..." class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date-birth">
+                                    Alamat
+                                </label>
+                            <textarea name="address" id="" cols="30" rows="10" class="form-control" placeholder="Masukkan alamat Anda"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date-birth">
+                                    Pilih Jurusan
+                                </label>
+                            <select class="form-control selectric">
+                                <option value="fbs">Food & Beverage Service (1 Tahun)</option>
+                                <option value="fbp">Food & Beverage Product (1 Tahun)</option>
+                                <option value="fo">Front Office (1 Tahun)</option>
+                                <option value="hk">Housekeeping (1 Tahun)</option>
+                                <option value="fbdm">Food & Beverage Division Management (2 Tahun)</option>
+                                <option value="rdm">Room Division Management (2 Tahun)</option>
+                                <option value="course-pesiar">Short Course Program Khusus Kapal Pesiar</option>
+                                <option value="bst">Short Course Program Basic Safety Training (BST)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date-birth" class="jalur-title" value="jalur">
+                                    Pilih Jalur
+                                </label>
+                            <select class="form-control selectric target jalur">
+                                <option value="reguler">Reguler</option>
+                                <option value="prestasi" id="prestasi">Prestasi</option>
+                                <option value="miskin">Tidak Mampu</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group from-prestasi" id="upload-certificate">
+                            <label for="upload-certificate">
+                                    Unggah Sertifikat/Rapor
+                                    <i class='bx bx-info-circle'>
+                                        <div class="info-prestasi">
+                                            <p>
+                                                Sertifikat juara minimal tingkat kabupaten/kota. Rapor hanya diterima untuk Juara Umum 1-3,
+                                            </p>
+                                        </div>    
+                                    </i>
+                                </label>
+                            <input type="file" id="upload-certificate" class="form-control">
+                        </div>
+
+                        <div class="form-group form-tidak-mampu">
+                            <label for="upload-photo">
+                                    Unggah Scan/Foto Kartu Miskin
+                                </label>
+                            <input type="file" id="upload-certificate" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="complete-name">
+                                    Pas Foto (2x3)
+                                </label>
+                            <input type="file" id="complete-name" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="complete-name">
+                                    Nomor WhatsApp
+                                </label>
+                            <input type="text" id="complete-name" placeholder="Masukkan nama WhatsApp Anda..." class="form-control">
+                            <p class="sub-desc">
+                                Mohon masukkan nomor WhatsApp yang sedang aktif <span>*</span>
+                            </p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="complete-name">
+                                    Nama Orangtua
+                                </label>
+                            <input type="text" id="complete-name" placeholder="Masukkan nama Orangtua Anda..." class="form-control">
+                            <p class="sub-desc">
+                                Nama Ayah atau Ibu (salah satu) <span>*</span>
+                            </p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="complete-name">
+                                    Nomor Telepon Orangtua
+                                </label>
+                            <input type="text" id="complete-name" placeholder="Masukkan nomor..." class="form-control">
+                            <p class="sub-desc">
+                                Mohon masukkan nomor telepon yang sedang aktif <span>*</span>
+                            </p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="complete-name">
+                                    Asal Sekolah
+                                </label>
+                            <input type="text" id="complete-name" placeholder="Masukkan asal sekolah Anda..." class="form-control">
+                        </div>
+
+                        <div class="partnership">
+                            <p class="label">PARTNERSHIP</p>
+                            <p class="label-desc">Memiliki kerjasama dengan berbagai Hospitality Industry</p>
+                            <div class="logo-partner">
+                                <img src="assets/img/logo/Logo-Pt-lawu-Agung-Rinjani-Permai.png" alt="">
+                                <img src="assets/img/logo/pramana-watu-kurung.png" alt="">
+                                <img src="assets/img/logo/kamandalu-resort-ubud.png" alt="">
+                                <img src="assets/img/logo/the-kayon-resort-ubud.png" alt="">
+                                <img src="assets/img/logo/the-alantara-sanur.png" alt="">
+                            </div>
+                            <div class="logo-partner">
+                                <img src="assets/img/logo/element-by-westin.png" alt="">
+                                <img src="assets/img/logo/the-kayon-jungle-resort.png" alt="">
+                                <img src="assets/img/logo/prime-plaza-hotel-sanur-bali.png" alt="">
+                                <img src="assets/img/logo/adiwana.png" alt="">
+                                <img src="assets/img/logo/djiwa.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btnSubmit section-margin">
+                    <button class="submit">
+                        SUBMIT
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Form Body End -->
+
+    <!-- Custom JS -->
+    <script src="assets/js/page/formulir-pendaftaran.js"></script>
+
+    <!-- General JS Scripts -->
+    <script src="assets/modules/jquery.min.js"></script>
+    <script src="assets/modules/popper.js"></script>
+    <script src="assets/modules/tooltip.js"></script>
+    <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="assets/modules/moment.min.js"></script>
+    <script src="assets/js/stisla.js"></script>
+
+    <!-- JS Libraies -->
+    <script src="assets/modules/cleave-js/dist/cleave.min.js"></script>
+    <script src="assets/modules/cleave-js/dist/addons/cleave-phone.us.js"></script>
+    <script src="assets/modules/jquery-pwstrength/jquery.pwstrength.min.js"></script>
+    <script src="assets/modules/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="assets/modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+    <script src="assets/modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+    <script src="assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+    <script src="assets/modules/select2/dist/js/select2.full.min.js"></script>
+    <script src="assets/modules/jquery-selectric/jquery.selectric.min.js"></script>
+
+    <!-- Page Specific JS File -->
+    <script src="assets/js/page/forms-advanced-forms.js"></script>
+
+    <!-- Template JS File -->
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
