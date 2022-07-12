@@ -1,0 +1,211 @@
+:root {
+    /* Color */
+    --primary-color: #002b75d8;
+    --secondary-color: #f6eb1c;
+    /* Font */
+    --heading-font: 'Montserrat', sans-serif;
+    --main-font: 'Roboto', sans-serif;
+}
+
+
+/* Default Setting */
+
+* {
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Custom Settings Style */
+
+body {
+    background-color: #F4F4F4;
+}
+
+.container {
+    max-width: 1135px;
+}
+
+.section-margin {
+    margin-top: 100px;
+}
+
+
+/* Heading Form Start */
+
+.container-heading {
+    background-image: url('../../imh-assets/img/cover-heading.jpg');
+    display: flex;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px 25px 0 0;
+}
+
+.container-heading img {
+    width: 200px;
+    margin: 25px;
+}
+
+.container-heading .content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-right .form-title {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 42px;
+    color: white;
+}
+
+.content-right .title-desc {
+    font-family: var(--heading-font);
+    color: white;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+
+/* Heading Form End */
+
+
+/* Form Body Start */
+
+.container-form {
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    padding: 50px;
+    border-radius: 0 0 25px 25px;
+}
+
+.container-form .sub-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form h5 {
+    font-size: 25px;
+    font-weight: 400;
+    color: rgba(1, 49, 102, 0.93);
+}
+
+.container-form hr {
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+.container-form .row {
+    justify-content: center;
+}
+
+
+/* Content Left Form Start */
+
+.container-form label {
+    color: #013166ED;
+    font-size: 14px;
+}
+
+.container-form .from-prestasi,
+.form-tidak-mampu {
+    position: relative;
+}
+
+.container-form .info-prestasi {
+    position: absolute;
+    top: -20px;
+    right: 30px;
+    width: 250px;
+    margin: 0 !important;
+    background-color: white;
+    border-radius: 10px;
+    padding: 7px;
+    display: none;
+    box-shadow: 2px 2px 5px #013166ED;
+}
+
+.bx-info-circle:hover {
+    cursor: pointer;
+}
+
+.bx-info-circle:hover .info-prestasi {
+    display: block;
+}
+
+.container-form .info-prestasi p {
+    font-size: 10px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+/* Content Left Form End */
+
+
+/* Content Right Form Start */
+
+.container-form .row .sub-desc {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 500;
+    color: black;
+}
+
+.container-form .row .sub-desc span {
+    color: red;
+}
+
+.container-form .partnership {
+    margin-top: 50px;
+}
+
+.container-form .partnership .label {
+    color: #013166ED;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+}
+
+.container-form .partnership .label-desc {
+    font-size: 12px;
+}
+
+.container-form .partnership .logo-partner {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container-form .partnership .logo-partner img {
+    width: 50px;
+    margin: 5px;
+}
+
+
+/* Content Right Form End */
+
+.container-form .submit {
+    background-color: #013166BF;
+    color: white;
+    width: 450px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #14579fbf !important;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Form Body Endy */
