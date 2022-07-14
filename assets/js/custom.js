@@ -6,3 +6,27 @@
  */
 
 "use strict";
+
+var trackLine       = $('#track-line');
+var achievementForm = $('#achievement-form');
+var poorForm        = $('#poor-form');
+
+var forms = {
+    'achievement': achievementForm,
+    'poor': poorForm,
+};
+
+trackLine.on('change', function (evt) {
+    hideAllTrackLineForm();
+
+    var form = forms[evt.target.value];
+
+    if (form) {
+        form.removeClass('d-none');
+    }
+});
+
+function hideAllTrackLineForm() {
+    achievementForm.addClass('d-none');
+    poorForm.addClass('d-none');
+}

@@ -91,11 +91,11 @@
                             <label for="complete-name">
                                     Nama Lengkap
                                 </label>
-                            <input type="text" id="complete-name" placeholder="Masukkan nama lengkap Anda..." class="form-control">
+                            <input type="text" placeholder="Masukkan nama lengkap Anda..." class="form-control">
                         </div>
 
                         <div class="form-group">
-                            <label for="gender">
+                            <label>
                                 Jenis Kelamin
                             </label>
                             <div class="radio-button">
@@ -149,35 +149,35 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="date-birth" class="jalur-title" value="jalur">
-                                    Pilih Jalur
-                                </label>
-                            <select class="form-control selectric target jalur">
-                                <option value="reguler">Reguler</option>
-                                <option value="prestasi" id="prestasi">Prestasi</option>
-                                <option value="miskin">Tidak Mampu</option>
+                            <label for="track-line" class="jalur-title">
+                                Pilih Jalur
+                            </label>
+                            <select id="track-line" class="form-control selectric">
+                                <option value="regular">Reguler</option>
+                                <option value="achievement">Prestasi</option>
+                                <option value="poor">Tidak Mampu</option>
                             </select>
                         </div>
 
-                        <div class="form-group from-prestasi" id="upload-certificate">
-                            <label for="upload-certificate">
-                                    Unggah Sertifikat/Rapor
-                                    <i class='bx bx-info-circle'>
-                                        <div class="info-prestasi">
-                                            <p>
-                                                Sertifikat juara minimal tingkat kabupaten/kota. Rapor hanya diterima untuk Juara Umum 1-3,
-                                            </p>
-                                        </div>    
-                                    </i>
-                                </label>
-                            <input type="file" id="upload-certificate" class="form-control">
+                        <div id="achievement-form" class="form-group d-none">
+                            <label>
+                                Unggah Sertifikat/Rapor
+                                <i class='bx bx-info-circle'>
+                                    <div class="info-prestasi">
+                                        <p>
+                                            Sertifikat juara minimal tingkat kabupaten/kota. Rapor hanya diterima untuk Juara Umum 1-3,
+                                        </p>
+                                    </div>
+                                </i>
+                            </label>
+                            <input id="file-upload-achievement" type="file" class="form-control">
                         </div>
 
-                        <div class="form-group form-tidak-mampu">
-                            <label for="upload-photo">
-                                    Unggah Scan/Foto Kartu Miskin
-                                </label>
-                            <input type="file" id="upload-certificate" class="form-control">
+                        <div id="poor-form" class="form-group d-none">
+                            <label>
+                                Unggah Scan/Foto Kartu Miskin
+                            </label>
+                            <input id="file-upload-poor" type="file" class="form-control">
                         </div>
                     </div>
                 </div>
@@ -186,16 +186,16 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label for="complete-name">
-                                    Pas Foto (2x3)
-                                </label>
-                            <input type="file" id="complete-name" class="form-control">
+                                Pas Foto (2x3)
+                            </label>
+                            <input type="file" class="form-control">
                         </div>
 
                         <div class="form-group">
                             <label for="complete-name">
-                                    Nomor WhatsApp
-                                </label>
-                            <input type="text" id="complete-name" placeholder="Masukkan nama WhatsApp Anda..." class="form-control">
+                                Nomor WhatsApp
+                            </label>
+                            <input type="text" placeholder="Masukkan nama WhatsApp Anda..." class="form-control">
                             <p class="sub-desc">
                                 Mohon masukkan nomor WhatsApp yang sedang aktif <span>*</span>
                             </p>
@@ -205,7 +205,7 @@
                             <label for="complete-name">
                                     Nama Orangtua
                                 </label>
-                            <input type="text" id="complete-name" placeholder="Masukkan nama Orangtua Anda..." class="form-control">
+                            <input type="text" placeholder="Masukkan nama Orangtua Anda..." class="form-control">
                             <p class="sub-desc">
                                 Nama Ayah atau Ibu (salah satu) <span>*</span>
                             </p>
@@ -215,7 +215,7 @@
                             <label for="complete-name">
                                     Nomor Telepon Orangtua
                                 </label>
-                            <input type="text" id="complete-name" placeholder="Masukkan nomor..." class="form-control">
+                            <input type="text" placeholder="Masukkan nomor..." class="form-control">
                             <p class="sub-desc">
                                 Mohon masukkan nomor telepon yang sedang aktif <span>*</span>
                             </p>
