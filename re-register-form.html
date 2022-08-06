@@ -49,10 +49,10 @@
             </div>
             <div class="content-right">
                 <h2 class="form-title">
-                    FORMULIR PENDAFTARAN
+                    FORMULIR PENDAFTARAN ULANG
                 </h2>
                 <p class="title-desc">
-                    INDIANA HOSPITALITY MANAGEMENT
+                    INDIANA HOSPITALITY MANAGEMENT SCHOOL
                 </p>
             </div>
         </div>
@@ -62,16 +62,34 @@
     <!-- Form Body Start -->
     <section class="form-body">
         <div class="container container-form">
-            <div class="sub-title">
-                <h5>
-                    IDENTITAS CALON MAHASISWA BARU
-                </h5>
-                <hr size="1px" width="25%" color="#F1C01D" align="left">
+
+            <!-- Heading -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card-body info-form">
+                        <div class="sub-title">
+                            <h5>
+                                IDENTITAS CALON MAHASISWA BARU
+                            </h5>
+                            <div class="label-1-desc">
+                                <P>
+                                    Bagi Calon Mahasiswa Baru yang sudah ditanyatakan lulus seleksi dapat melengkapi data dibawah ini. Pastikan data-data yang diisi sudah benar dan valid.
+                                </P>
+                            </div>
+                        </div>
+                        <p class="file-size-note">
+                            <span>*</span><b>Kapasitas dokumen yang diunggah tidak boleh melebihi dari 1 MB</b>
+                        </p>
+                    </div>
+                </div>
             </div>
 
+
+            <!-- Body -->
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-6">
                     <div class="card-body">
+
                         <div class="form-group">
                             <label for="complete-name">
                                     Nama Lengkap
@@ -80,89 +98,31 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="complete-name">
+                                    Nomor Registrasi
+                                </label>
+                            <input type="text" placeholder="Masukkan nomor registrasi Anda..." class="form-control">
+                        </div>
+
+                        <div class="form-group">
                             <label>
-                                Jenis Kelamin
+                                Pas Foto 2x3 CM
                             </label>
-                            <div class="radio-button">
-
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline1">Laki-laki</label>
-                                </div>
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline2">Perempuan</label>
-                                </div>
-                            </div>
+                            <input type="file" class="form-control">
                         </div>
 
                         <div class="form-group">
-                            <label for="place-birth">
-                                    Tempat Lahir
-                                </label>
-                            <input type="text" id="place-birth" placeholder="Masukkan tempat lahir Anda..." class="form-control">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="date-birth">
-                                    Tanggal Lahir
-                                </label>
-                            <input type="date" id="date-birth" placeholder="Masukkan tanggal lahir Anda..." class="form-control">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="date-birth">
-                                    Alamat
-                                </label>
-                            <textarea name="address" id="" cols="30" rows="10" class="form-control" placeholder="Masukkan alamat Anda"></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="date-birth">
-                                    Pilih Jurusan
-                                </label>
-                            <select class="form-control selectric">
-                                <option value="fbs">Food & Beverage Service (1 Tahun)</option>
-                                <option value="fbp">Food & Beverage Product (1 Tahun)</option>
-                                <option value="fo">Front Office (1 Tahun)</option>
-                                <option value="hk">Housekeeping (1 Tahun)</option>
-                                <option value="fbdm">Food & Beverage Division Management (2 Tahun)</option>
-                                <option value="rdm">Room Division Management (2 Tahun)</option>
-                                <option value="course-pesiar">Short Course Program Khusus Kapal Pesiar</option>
-                                <option value="bst">Short Course Program Basic Safety Training (BST)</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="track-line" class="jalur-title">
-                                Pilih Jalur
-                            </label>
-                            <select id="track-line" class="form-control selectric">
-                                <option value="regular">Reguler</option>
-                                <option value="achievement">Prestasi</option>
-                                <option value="poor">Tidak Mampu</option>
-                            </select>
-                        </div>
-
-                        <div id="achievement-form" class="form-group d-none">
                             <label>
-                                Unggah Sertifikat/Rapor
-                                <i class='bx bx-info-circle'>
-                                    <div class="info-prestasi">
-                                        <p>
-                                            Sertifikat juara minimal tingkat kabupaten/kota. Rapor hanya diterima untuk Juara Umum 1-3,
-                                        </p>
-                                    </div>
-                                </i>
+                                Bukti Pembayaran Cicilan Pertama Biaya Perkuliahan
                             </label>
-                            <input id="file-upload-achievement" type="file" class="form-control">
+                            <input type="file" class="form-control">
                         </div>
 
-                        <div id="poor-form" class="form-group d-none">
+                        <div class="form-group">
                             <label>
-                                Unggah Scan/Foto Kartu Miskin
+                                Foto/Scan Surat Vaksin COVID-19
                             </label>
-                            <input id="file-upload-poor" type="file" class="form-control">
+                            <input type="file" class="form-control">
                         </div>
                     </div>
                 </div>
@@ -171,48 +131,56 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label for="complete-name">
-                                Pas Foto (2x3)
+                                Surat Keterangan Lulus
+                            </label>
+                            <input type="file" class="form-control">
+                            <p class="sub-desc">
+                                Surat Keterangan Lulus yang telah <b>dilegalisir</b> oleh Kepala Sekolah <span>*</span>
+                            </p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="complete-name">
+                                Foto/Scan KTP
                             </label>
                             <input type="file" class="form-control">
                         </div>
 
                         <div class="form-group">
                             <label for="complete-name">
-                                Nomor WhatsApp
+                                Foto/Scan Akta Kelahiran
                             </label>
-                            <input type="text" placeholder="Masukkan nama WhatsApp Anda..." class="form-control">
-                            <p class="sub-desc">
-                                Mohon masukkan nomor WhatsApp yang sedang aktif <span>*</span>
-                            </p>
+                            <input type="file" class="form-control">
                         </div>
 
                         <div class="form-group">
                             <label for="complete-name">
-                                    Nama Orangtua
-                                </label>
-                            <input type="text" placeholder="Masukkan nama Orangtua Anda..." class="form-control">
-                            <p class="sub-desc">
-                                Nama Ayah atau Ibu (salah satu) <span>*</span>
-                            </p>
+                                Foto/Scan Kartu Keluarga (KK)
+                            </label>
+                            <input type="file" class="form-control">
                         </div>
 
                         <div class="form-group">
                             <label for="complete-name">
-                                    Nomor Telepon Orangtua
-                                </label>
-                            <input type="text" placeholder="Masukkan nomor..." class="form-control">
-                            <p class="sub-desc">
-                                Mohon masukkan nomor telepon yang sedang aktif <span>*</span>
-                            </p>
+                                Foto/Scan Surat Keterangan Sehat
+                            </label>
+                            <input type="file" class="form-control">
                         </div>
 
-                        <div class="form-group">
-                            <label for="complete-name">
-                                    Asal Sekolah
-                                </label>
-                            <input type="text" id="complete-name" placeholder="Masukkan asal sekolah Anda..." class="form-control">
-                        </div>
+                    </div>
+                </div>
 
+                <div class="btnSubmit">
+                    <button class="submit">
+                        <a href="form-success-fill.html" style="text-decoration: none; color: white;">SUBMIT</a>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card-body info-form section-margin">
                         <div class="partnership">
                             <p class="label">PARTNERSHIP</p>
                             <p class="label-desc">Memiliki kerjasama dengan berbagai Hospitality Industry</p>
@@ -232,12 +200,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="btnSubmit section-margin">
-                    <button class="submit">
-                        <a href="form-success-fill.html" style="text-decoration: none; color: white;">SUBMIT</a>
-                    </button>
                 </div>
             </div>
 

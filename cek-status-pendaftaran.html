@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Pendaftaran Sukses - IHM</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="assets/modules/bootstrap-daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="assets/modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+    <link rel="stylesheet" href="assets/modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="assets/modules/jquery-selectric/selectric.css">
+    <link rel="stylesheet" href="assets/modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+    <link rel="stylesheet" href="assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/sipenmaru.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <!-- Start GA -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-94034622-3');
+    </script>
+    <!-- /END GA -->
+</head>
+
+<body>
+
+    <!-- Heading Form Start -->
+    <section class="form-heading section-margin" id="form-heading">
+        <div class="container container-heading">
+            <div class="content-cek-status">
+                <h2 class="form-title">
+                    INFORMASI PENDAFTARAN MAHASISWA BARU
+                </h2>
+                <p class="title-desc">
+                    INDIANA HOSPITALITY MANAGEMENT SCHOOL
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Heading Form End -->
+
+    <!-- Form Body Start -->
+    <section class="form-body">
+        <div class="container container-form">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card-body info-form">
+
+                        <!-- Heading Information -->
+                        <div class="label-1">
+                            <h5>
+                                cek status pendaftaran mahasiswa baru
+                            </h5>
+                            <div class="label-1-desc">
+                                <p>
+                                    Silakan masukkan nomor pendaftaran dan lihat status pendaftaran dibawah ini. Jika status pendaftaran sudah diterima, segera lakukan pembayaran pendaftaran dan unggah bukti pembayaran dibawah ini.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Registration Check Field -->
+                        <div class="section-margin">
+                            <div class="form-group cek-registrasi">
+                                <label for="complete-name">
+                                        Nomor Registrasi
+                                </label>
+                                <div class="input-field">
+                                    <input type="text" placeholder="Masukkan nomor registrasi Anda..." class="form-control">
+                                    <button class="btn btn-primary">
+                                        CEK REGISTRASI
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Table Result of Registration Check -->
+                        <div class="p-0 reuslt-table section-margin">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-md">
+                                    <tr>
+                                        <th>nama pendaftar</th>
+                                        <th>asal sekolah</th>
+                                        <th>jalur</th>
+                                        <th>status</th>
+                                    </tr>
+                                    <!-- When Jalur is Reguler and directly can upload payment proof-->
+                                    <tr>
+                                        <td>made paling</td>
+                                        <td>smkn 2 zimbabwe</td>
+                                        <td>reguler</td>
+                                        <td>
+                                            <div class="badge badge-primary">processing</div>
+                                        </td>
+                                    </tr>
+                                    <!-- When Jalur is Reguler and payment proof has been validated by admin -->
+                                    <tr>
+                                        <td>made paling</td>
+                                        <td>smkn 2 zimbabwe</td>
+                                        <td>reguler</td>
+                                        <td>
+                                            <div class="badge badge-success">approved</div>
+                                        </td>
+                                    </tr>
+                                    <!-- When Jalur is Prestasi and need to upload document before do the payment and then admin will be validate the document -->
+                                    <tr>
+                                        <td>gede bagus ngelaleng</td>
+                                        <td>sman 1 zimbabwe</td>
+                                        <td>prestasi</td>
+                                        <td>
+                                            <div class="badge badge-primary">proccesing</div>
+                                        </td>
+                                    </tr>
+                                    <!-- When Jalur is Prestasi and the document has been validated by admin, then need to upload the payment proof -->
+                                    <tr>
+                                        <td>gede bagus ngelaleng</td>
+                                        <td>sman 1 zimbabwe</td>
+                                        <td>prestasi</td>
+                                        <td>
+                                            <div class="badge badge-warning">document-approved</div>
+                                        </td>
+                                    </tr>
+                                    <!-- When Jalur is Tidak Mampu and need to upload document before do the payment and then admin will be validate the document -->
+                                    <tr>
+                                        <td>luh lampyang</td>
+                                        <td>sma 3 konoha</td>
+                                        <td>tidak mampu</td>
+                                        <td>
+                                            <div class="badge badge-primary">processing</div>
+                                        </td>
+                                    </tr>
+                                    <!-- When Jalur is Tidak Mampu and the document has been validated by admin, then need to upload the payment proof -->
+                                    <tr>
+                                        <td>luh lampyang</td>
+                                        <td>sma 3 konoha</td>
+                                        <td>tidak mampu</td>
+                                        <td>
+                                            <div class="badge badge-warning">document-approved</div>
+                                        </td>
+                                    </tr>
+                                    <!-- When admin has been approved the registration in all Jalur, then the status will changed to approved -->
+                                    <tr>
+                                        <td>made paling</td>
+                                        <td>smkn 2 zimbabwe</td>
+                                        <td>reguler</td>
+                                        <td>
+                                            <div class="badge badge-success">approved</div>
+                                        </td>
+                                    </tr>
+                                    <!-- When admin rejected the registration due the invalid document that uploaded by student, then the status will changed to rejected and studen need to re-upload the document -->
+                                    <tr>
+                                        <td>made paling</td>
+                                        <td>smkn 2 zimbabwe</td>
+                                        <td>reguler</td>
+                                        <td>
+                                            <div class="badge badge-danger">rejected</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Upload Payment Proof -->
+                        <div class="section-margin">
+                            <div class="form-group cek-registrasi">
+                                <label for="complete-name">
+                                        Unggah Bukti Pembayaran Biaya Pendaftaran
+                                </label>
+                                <div class="input-field">
+                                    <input type="file" class="form-control">
+                                </div>
+                                <p class="sub-desc">
+                                    <i>
+                                        Jika belum melunasi biaya pendaftaran sebesar Rp. 250.000, bisa ikut langkah-langkah pada halaman <a href="form-success-fill.html">Alur Pendaftaran</a>.
+                                    </i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="btn-submit">
+                            <button class="btn btn-primary">
+                                SUBMIT
+                            </button>
+                        </div>
+
+                        <!-- When status changed to "Approved", then students need to fill the re-registration form -->
+                        <div class="success-message label-1 section-margin">
+                            <h5>selamat, and telah dinyatakan lulus seleksi !</h5>
+                            <div class="label-1-desc">
+                                <p>
+                                    Silakan melengkapi formulir pendaftaran ulang untuk menyelesaikan proses pendaftaran.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="btn-re-register">
+                            <a href="re-register-form.html">
+                                <button class="btn btn-primary">
+                                    PENDAFTARAN ULANG
+                                </button>
+                            </a>
+                        </div>
+
+                        <!-- When status changed to "Rejected" due the incvalid document, then students need to re-upload the document.  -->
+                        <div class="success-message label-1 section-margin">
+                            <h5>mohon maaf, data anda ditolak/tidak valid</h5>
+                            <div class="label-1-desc">
+                                <!-- Prestasi/Tidak Mampu role message -->
+                                <p>
+                                    Dokumen yang diunggah mungkin tidak memenuhi kriteria atau terdapat kesalahan pada dokumen. Mohon periksa kembali dokumen Anda dan unggah kembali. Atau Anda bisa kunjungi halaman
+                                    <a href="form-success-fill.html#role-condition">Lihat Persyaratan Jalur Prestasi/Tidak Mampu</a>. Terimakasih
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Upload Documents -->
+                        <div class="section-margin">
+                            <div class="form-group cek-registrasi">
+                                <label for="complete-name">
+                                        Unggah ulang dokumen pendukung <br>(Sertifikat/Raport untuk Jalur Prestasi. Scan/Foto Kartu Miskin untuk Jalur Tidak Mampu).
+                                </label>
+                                <div class="input-field">
+                                    <input type="file" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- When status changed to "Rejected" due the payment proof is invalid, then student need to re-upload the payment proof -->
+                        <div class="success-message label-1 section-margin">
+                            <h5>mohon maaf, data anda ditolak/tidak valid</h5>
+                            <div class="label-1-desc">
+                                <!-- Invalid Payment Proof -->
+                                <p>
+                                    Bukti pembayaran yang Anda unggah tidak valid, mohon unggah bukti pembayaran yang valid, atau Anda bisa kunjungi halaman <a href="form-success-fill.htmls">Lihat Persyaratan</a>.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Upload Payment Proof -->
+                        <div class="section-margin">
+                            <div class="form-group cek-registrasi">
+                                <label for="complete-name">
+                                        Unggah Bukti Pembayaran Biaya Pendaftaran
+                                </label>
+                                <div class="input-field">
+                                    <input type="file" class="form-control">
+                                </div>
+                                <p class="sub-desc">
+                                    <i>
+                                        Jika belum melunasi biaya pendaftaran sebesar Rp. 250.000, bisa ikut langkah-langkah pada halaman <a href="form-success-fill.html">Alur Pendaftaran</a>.
+                                    </i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="partnership section-margin">
+                            <p class="label">PARTNERSHIP</p>
+                            <p class="label-desc">Memiliki kerjasama dengan berbagai Hospitality Industry</p>
+                            <div class="logo-partner">
+                                <img src="assets/img/logo/Logo-Pt-lawu-Agung-Rinjani-Permai.png" alt="">
+                                <img src="assets/img/logo/pramana-watu-kurung.png" alt="">
+                                <img src="assets/img/logo/kamandalu-resort-ubud.png" alt="">
+                                <img src="assets/img/logo/the-kayon-resort-ubud.png" alt="">
+                                <img src="assets/img/logo/the-alantara-sanur.png" alt="">
+                            </div>
+                            <div class="logo-partner">
+                                <img src="assets/img/logo/element-by-westin.png" alt="">
+                                <img src="assets/img/logo/the-kayon-jungle-resort.png" alt="">
+                                <img src="assets/img/logo/prime-plaza-hotel-sanur-bali.png" alt="">
+                                <img src="assets/img/logo/adiwana.png" alt="">
+                                <img src="assets/img/logo/djiwa.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Form Body End -->
+
+    <!-- Custom JS -->
+    <script src="assets/js/page/formulir-pendaftaran.js"></script>
+
+    <!-- General JS Scripts -->
+    <script src="assets/modules/jquery.min.js"></script>
+    <script src="assets/modules/popper.js"></script>
+    <script src="assets/modules/tooltip.js"></script>
+    <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="assets/modules/moment.min.js"></script>
+    <script src="assets/js/stisla.js"></script>
+
+    <!-- JS Libraies -->
+    <script src="assets/modules/cleave-js/dist/cleave.min.js"></script>
+    <script src="assets/modules/cleave-js/dist/addons/cleave-phone.us.js"></script>
+    <script src="assets/modules/jquery-pwstrength/jquery.pwstrength.min.js"></script>
+    <script src="assets/modules/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="assets/modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+    <script src="assets/modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+    <script src="assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+    <script src="assets/modules/select2/dist/js/select2.full.min.js"></script>
+    <script src="assets/modules/jquery-selectric/jquery.selectric.min.js"></script>
+
+    <!-- Page Specific JS File -->
+    <script src="assets/js/page/forms-advanced-forms.js"></script>
+
+    <!-- Template JS File -->
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/page/bootstrap-modal.js"></script>
+</body>
+
+</html>
